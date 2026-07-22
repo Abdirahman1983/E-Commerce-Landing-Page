@@ -1,1 +1,20 @@
 
+Total Revenue = SUM(Sales[Revenue])
+
+Total Orders = COUNT(Sales[OrderID])
+
+Avg Order Value = DIVIDE([Total Revenue], [Total Orders])
+
+Monthly Revenue = CALCULATE([Total Revenue], DATESMTD('Date'[Date]))
+
+Revenue Growth % =
+DIVIDE(
+    [Total Revenue] - CALCULATE([Total Revenue], DATEADD('Date'[Date], -1, MONTH)),
+    CALCULATE([Total Revenue], DATEADD('Date'[Date], -1, MONTH))
+)
+
+Underperforming Region Flag =
+IF([Revenue Growth %] < 0, 1, 0)
+
+Target Variance =
+[Total Revenue] - SUM(Sales[Target])

@@ -1,1 +1,224 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ECHELON — Model One — Precision Isolation Headphones</title>
+<meta name="description" content="Model One by ECHELON. Engineered for total sound isolation. $249. Free shipping, 60-night trial.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#main" class="nav__logo">ECHELON</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#features">Isolation</a>
+      <a href="#specs">Specs</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <button class="nav__cart" id="navCart" aria-label="Cart, 0 items">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+      <span class="nav__cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Model One / Over-Ear</p>
+        <h1 class="hero__title">
+          <span class="line" data-line>Silence isn't</span>
+          <span class="line" data-line>empty.</span>
+          <span class="line hero__title--accent" data-line>It's engineered.</span>
+        </h1>
+        <p class="hero__sub">42dB of active isolation, tuned in an anechoic chamber so the only thing left to hear is what you chose to play.</p>
+
+        <div class="hero__buy">
+          <div class="hero__price">
+            <span class="hero__price-amount">$249</span>
+            <span class="hero__price-note">or 4× $62.25 — free 60-night trial</span>
+          </div>
+          <button class="btn btn--primary btn--add" data-add-to-cart>
+            <span class="btn__label">Add to cart</span>
+            <span class="btn__check" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hp" id="hpVisual">
+          <div class="hp__band"></div>
+          <div class="hp__cup hp__cup--left"><div class="hp__ring"></div></div>
+          <div class="hp__cup hp__cup--right"><div class="hp__ring"></div></div>
+          <div class="hp__wave">
+            <svg viewBox="0 0 400 120" width="100%" height="100%">
+              <path id="wavePath" d="M0,60 Q50,10 100,60 T200,60 T300,60 T400,60" fill="none" stroke="#00E5C7" stroke-width="2" opacity="0.7"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+
+    <div class="feature" data-feature>
+      <div class="feature__num">42dB</div>
+      <div class="feature__body">
+        <p class="eyebrow">Isolation</p>
+        <h2>Three mic arrays, one silent core.</h2>
+        <p>Feed-forward and feed-back mics sample outside noise 50,000 times a second, cancelling it before it reaches your ear canal. What's left is tuned to nothing — no hiss, no pressure, no phantom hum.</p>
+      </div>
+      <div class="feature__visual">
+        <div class="ring-vis" data-ring-vis>
+          <span class="ring-vis__ring r1"></span>
+          <span class="ring-vis__ring r2"></span>
+          <span class="ring-vis__ring r3"></span>
+          <span class="ring-vis__core"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature feature--reverse" data-feature>
+      <div class="feature__num">38h</div>
+      <div class="feature__body">
+        <p class="eyebrow">Battery</p>
+        <h2>A full week, not a full charge.</h2>
+        <p>38 hours with isolation running, 52 without. Ten minutes on the case buys six hours on the road. You stop thinking about the battery, which is the point.</p>
+      </div>
+      <div class="feature__visual">
+        <div class="batt-vis" data-batt-vis>
+          <div class="batt-vis__cell"><div class="batt-vis__fill" data-batt-fill></div></div>
+          <span class="batt-vis__label">38<small>hrs</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature" data-feature>
+      <div class="feature__num">22g</div>
+      <div class="feature__body">
+        <p class="eyebrow">Materials</p>
+        <h2>Aircraft-grade, forgettable weight.</h2>
+        <p>Aluminum yoke, memory-foam ear cushions in vegan leather, a headband core that flexes 20,000 times without fatigue. 22g per cup — light enough to forget you're wearing them.</p>
+      </div>
+      <div class="feature__visual">
+        <div class="weight-vis" data-weight-vis>
+          <span class="weight-vis__num">22</span>
+          <span class="weight-vis__unit">grams / cup</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ SPEC SHEET ============ -->
+  <section class="specsheet" id="specs">
+    <div class="specsheet__head">
+      <p class="eyebrow">Spec sheet</p>
+      <h2>Everything measured, nothing hidden.</h2>
+    </div>
+    <table class="specsheet__table">
+      <tbody>
+        <tr><th>Active isolation</th><td>up to 42dB</td></tr>
+        <tr><th>Battery life</th><td>38h ANC on / 52h off</td></tr>
+        <tr><th>Fast charge</th><td>10 min → 6 hrs</td></tr>
+        <tr><th>Driver</th><td>40mm dynamic, custom cone</td></tr>
+        <tr><th>Weight</th><td>22g per ear cup / 240g total</td></tr>
+        <tr><th>Connectivity</th><td>Bluetooth 5.4, multipoint ×2</td></tr>
+        <tr><th>Codec support</th><td>SBC, AAC, aptX Adaptive</td></tr>
+        <tr><th>Water resistance</th><td>IPX4</td></tr>
+        <tr><th>Case</th><td>anodized aluminum, USB-C</td></tr>
+        <tr><th>Warranty</th><td>2 years, 60-night trial</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews">
+    <p class="eyebrow">From the first 500 units</p>
+    <div class="reviews__grid">
+      <figure class="review">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Wore these through an 11-hour flight and forgot the engine existed. The band doesn't pinch after hour three, which is where every other pair I've owned starts to hurt.</blockquote>
+        <figcaption>— Dara O., verified buyer</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>I record voiceover from a home office next to a busy street. These are the first pair that let me track without hearing a single truck go by.</blockquote>
+        <figcaption>— Marcus T., verified buyer</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★☆</div>
+        <blockquote>Battery claim is real — I charge these roughly once a week. Case feels genuinely premium, not just marketed that way.</blockquote>
+        <figcaption>— Priya N., verified buyer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="closer">
+    <h2>Try Model One for 60 nights.<br>Keep the silence, or send it back.</h2>
+    <button class="btn btn--primary btn--add" data-add-to-cart>
+      <span class="btn__label">Add to cart — $249</span>
+      <span class="btn__check" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>
+      </span>
+    </button>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="nav__logo">ECHELON</span>
+    <p>Free shipping in the continental US. 60-night trial on every order. 2-year warranty.</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar__info">
+    <strong>$249</strong>
+    <span>Model One</span>
+  </div>
+  <button class="btn btn--primary btn--add btn--sticky" data-add-to-cart>
+    <span class="btn__label">Add to cart</span>
+    <span class="btn__check" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>
+    </span>
+  </button>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>
+  <span>Added to cart</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

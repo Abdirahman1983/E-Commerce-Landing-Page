@@ -1,1 +1,8 @@
 
+Date,Region,Product,Revenue,Target,Orders
+2024-01-01,North,Product A,12000,15000,120
+2024-01-01,South,Product B,9800,11000,98
+2024-02-01,East,Product C,13500,14000,130
+2024-02-01,West,Product D,7600,10000,75
+2024-03-01,North,Product A,15000,14500,140
+2024-03-01,South,Product B,9000,12000,90
